@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lilita+One&display=swap');
+        html {
+            min-height: 100vh; /* Altura mínima del 100% de la ventana gráfica */
+        }       
+        body{
+            background:linear-gradient(to bottom right, bisque, purple);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            text-overflow: initial;
+            font-family: "Abril Fatface";
+            color: white;
+        }
+        h2{
+            text-align: center;
+        }
+        button{
+            margin: 5px; 
+            color: blueviolet; 
+            box-shadow: 3px 3px 3px 3px yellow;
+        }
+        button:hover{
+            box-shadow: 3px 3px 3px 3px purple;
+        }
+        div{
+            background-color: black;
+            box-shadow: 2px 5px 5px 5px ;
+            width: 80%;
+        }
+        .barra{
+            background-color: rgb(214, 117, 117);
+            box-shadow: 5px 5px 15px 5px;
+            color: white;
+            width: 80%;
+        }
+        .seg{
+            background-color: yellow;
+            box-shadow: 2px 5px 5px 5px;
+            color: yellow;
+            width: 80%;
+        }
+        .sec{
+            margin: 5px; 
+            color: blueviolet; 
+            box-shadow: 3px 3px 3px 3px black;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Menú trabajos</h1>
+<h2>Danae Becerril López</h2>
+<h2>Corte 3</h2>
+<center>
+<p class="barra">Semana 1</p>
+
+<div>
+<button onclick="trabajo1()">Trabajo 1</button>
+<button onclick="trabajo2()">Trabajo 2</button>
+<button onclick="trabajo3()">Trabajo 3</button>
+<button onclick="trabajo4()">trabajo 4</button>
+<button onclick="trabajo5()">Trabajo 5</button>
+<button onclick="trabajo6()">Trabajo 6</button>
+<button onclick="trabajo7()">Trabajo 7</button>
+<button onclick="trabajo8()">Trabajo 8</button>
+</div>
+<p id="demo"></p>
+<p class="barra">Semana 2</p>
+<div class="seg">
+    <button class="sec" onclick="trabajo9()">Trabajo 9</button>
+    <button class="sec" onclick="trabajo10()">Trabajo 10</button>
+    <button class="sec" onclick="trabajo11()">Trabajo 11</button>
+    <button class="sec" onclick="trabajo12()">trabajo 12</button>
+    <button class="sec" onclick="trabajo13()">Trabajo 13</button>
+    <button class="sec" onclick="trabajo14()">Trabajo 14</button>
+    <button class="sec" onclick="trabajo15()">Trabajo 15</button>
+    <button class="sec" onclick="trabajor1()">Reto 1</button>    
+    <button class="sec" onclick="trabajor2()">Reto 2</button> 
+</div>
+<p id="dem"></p>
+</center>
+
+<script>
+    function trabajo1() {
+        document.getElementById("demo").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_1.html' > &#128073; Generador de parrafos </a></center>";
+    }
+    function trabajo2() {
+        document.getElementById("demo").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_3c.html' > &#128073; Genera tabla </a></center>";
+    }function trabajo3() {
+        document.getElementById("demo").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_3a.html' > &#128073; Tabla caracter </a></center>";
+    }function trabajo4() {
+        document.getElementById("demo").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_3.html' > &#128073; Tabla imagen </a></center>";
+    }function trabajo5() {
+        document.getElementById("demo").innerHTML = "<center><a href='http://miindexweb.000webhostapp.com/menu/Ej_4.html' > &#128073; Tabla aleatorios</a></center>";
+    }function trabajo6() {
+        document.getElementById("demo").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_3b.html' >&#128073; valida usuario</a></center>";
+    }function trabajo7() {
+        document.getElementById("demo").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_4a.html' > &#128073; Conversor grados </a></center>";
+    }function trabajo8() {
+        document.getElementById("demo").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/tablaarreglo.html' > &#128073; Menu arreglos</a></center>";
+    }
+</script>
+<script>    
+    function trabajo9() {
+        document.getElementById("dem").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_1.html' > &#128073; Generador de parrafos </a></center>";
+    }
+    function trabajo10() {
+        document.getElementById("dem").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_3c.html' > &#128073; Genera tabla </a></center>";
+    }function trabajo11() {
+        document.getElementById("dem").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_3a.html' > &#128073; Tabla caracter </a></center>";
+    }function trabajo12() {
+        document.getElementById("dem").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_3.html' > &#128073; Tabla imagen </a></center>";
+    }function trabajo13() {
+        document.getElementById("dem").innerHTML = "<center><a href='http://miindexweb.000webhostapp.com/menu/Ej_4.html' > &#128073; Tabla aleatorios</a></center>";
+    }function trabajo14() {
+        document.getElementById("dem").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_3b.html' >&#128073; valida usuario</a></center>";
+    }function trabajo15() {
+        document.getElementById("dem").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_4a.html' > &#128073; Conversor grados </a></center>";
+    }function trabajor1() {
+        document.getElementById("dem").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_4a.html' > &#128073; Reto 1 </a></center>";
+    }function trabajor2() {
+        document.getElementById("dem").innerHTML = "<center><a href='https://miindexweb.000webhostapp.com/menu/Ej_4a.html' > &#128073; Reto 2 </a></center>";
+    }
+</script>
+</body>
+
+</html>

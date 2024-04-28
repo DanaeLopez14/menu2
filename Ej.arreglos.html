@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Arreglos</h1>
+<h2>ordenación</h2>
+<p>Click en la opcion</p>
+<button onclick="generaArreglo()">GeneraArreglo</button>
+<button onclick="imprimirArreglo()">Imprime Arreglo</button>
+<button onclick="ordenaArreglo()">Ordena Arreglo</button>
+<button onclick="reversa()">Arreglo invertido</button>
+<p id="demo"></p>
+<script>
+    var arreglo= [0 , 0 , 0 , 0 , 0 , 0];
+    function generaArreglo() {
+        for(i=0;i<6; i++)
+            arreglo[i]=Math.floor(Math.random()* 100)+1;
+    }
+    function imprimirArreglo() {
+        document.getElementById("demo").innerHTML = "Arreglo resultante: " + arreglo;
+
+    }
+    function ordenaArreglo() {
+        arreglo=arreglo.sort(function(a, b){return a-b;});
+    }
+    function reversa() {
+        arreglo=arreglo.reverse();
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<html>
+  <head>
+    
+  <title>Ejercicio 4a</title>
+
+<script type = "text/javascript">
+     function Convertir() { 
+            var grados1 = parseInt(document.forms[0].grados.value); //con var se declaran variables, en este caso esta es local pues está dentro de la funcion
+            var unidades = parseInt(document.forms[0].opcion.value); 
+            var resultado=0;
+            if(unidades==1)
+            {
+                resultado=grados1*1.8+32;
+                document.write("<center>");
+                document.write(grados1," °C = ",resultado, "°F");
+                document.write("</center>");
+            }
+
+            if(unidades==2)
+            {
+                resultado=grados1+273.15;
+                document.write(grados1," °C son ",resultado, "K");
+            }
+            return true;
+        }
+</script>
+<style>
+    body{
+        background-color: purple;
+    }
+    p{
+        color: beige;
+    }
+</style>
+</head>
+
+<body>
+    <form id="myform" onsubmit="return Convertir();"><!--la funcion alertName, aquí no le da ningun parámetro-->
+        <p>Grados <input id="grados" name="grados" type="text" />°</p>
+        <p>Convertir a:
+        <select name="opcion" id="opcion">
+            <option value="1">Farenheit</option>
+            <option value="2">Kelvin</option>
+        </select>
+        </p>
+        <p><input type="submit"/></p>
+    </form>
+    
+</body>
+</body>
+
+</html>

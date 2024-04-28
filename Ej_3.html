@@ -1,0 +1,49 @@
+<html>
+  <head>
+    
+  <title>Bienvenida del usuario</title>
+
+<script type = "text/javascript">
+    function alertName() {
+
+        var veces1= parseInt(document.forms[0].veces.value); 
+        var colu1= parseInt(document.forms[0].colu.value); /* solo existe un form[0] . value /parseint(): lo que estoy leyendo lo transformo a entero
+            Almacenamos en veces1 convertido en entero el argumento de parseint*/
+            /*puede empezar de 0 o 1  document.write: hay un documento y escribe las veces que le indique pero SUPLE el documento de contenido; onsubmit toma el valor de return para indicar que se ejecuto con exito, el onsubmit esta llamando a la funcion por valor
+            127.0.0.1 direccion de tu tarjeta de red y :5500 puerto en donde estan ejecutando tu archivo*/
+        document.write("<center>");
+        document.write("<table style='border: 2px solid blueviolet'>");
+        for(i=1;i<=veces1;i++){
+            document.write("<tr style='border: 2px solid blueviolet; background-color: pink'>");
+            for(j=1;j<=colu1;j++){
+                document.write("<td style='border: 2px solid blueviolet'> <img src=OIP.jfif alt=no se pudo width=40px heigt=40px ></td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        document.write("</center>");
+        return true;
+    }
+</script>
+<style>
+    body{
+        background-color: palevioletred;
+    }
+    p{
+        color: beige;
+    }
+</style>
+</head>
+
+<body>
+
+<form id="myform" onsubmit="return alertName();">
+
+<p>¿Cuantos filas? <input id="veces" name="veces" type="text" /></p>
+<p>¿Cuantos columnas?<input id="colu" name="colu" type="text" /></p>
+
+<p><input type="submit" /></p>
+
+</body>
+
+</html>

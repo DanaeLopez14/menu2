@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: rgb(117, 1, 117);
+            
+        }
+    </style>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+    <center>
+    <div id="myPlot" style="width:100%;max-width:700px"></div>
+    <script>
+
+        const xArray = ["Programacion 1", "Matematicas 1", "Fisica 1", "Ingles IV", "Programacion web", "Nucleo 2", "Matematicas 3"];
+        const yArray = [8.5, 8, 6.5, 9, 10, 8, 8];
+        const data = [{
+            x:xArray,
+            y:yArray,
+            type:"bar",
+            orientation:"v",
+            marker: {color:" rgb(226, 160, 226)", margin: "2px solid black"}
+        }];
+        
+        const layout = {title:"Mi progreso primer parcial"};
+        Plotly.newPlot("myPlot", data, layout);
+        //el espacio en el que se va a generar (myPlot), los datos
+    </script>
+
+   
+
+    <div id="dos" style="width:100%;max-width:700px"></div>
+    <script>
+
+        const xArra = ["Programacion 1", "Matematicas 1", "Fisica 1", "Ingles IV", "Programacion web", "Nucleo 2", "Matematicas 3"];
+        const yArra = [9, 8.5, 7, 9, 9, 8.5, 9.5];
+        const datos = [{
+            x:xArra,
+            y:yArra,
+            type:"bar",
+            orientation:"v",
+            marker: {color:" rgb(126, 160, 226)", margin: "2px solid black"}
+        }];
+    
+        const otro = {title:"Mi progreso segundo parcial"};
+        Plotly.newPlot("dos", datos, otro);
+        //el espacio en el que se va a generar (myPlot), los datos
+    </script>
+
+    <div id="tres" style="width:100%;max-width:700px"></div>
+        <script>
+            var num1;
+            const xAr = ["Programacion 1", "Matematicas 1", "Fisica 1", "Ingles IV", "Programacion web", "Nucleo 2", "Matematicas 3"];
+            num1=Math.floor(Math.random()*4+6);
+            const yAr = [num1, Math.floor(Math.random()*10+0.5), Math.floor(Math.random()*10+0.5), Math.floor(Math.random()*10+0.5), Math.floor(Math.random()*10+.5), Math.floor(Math.random()*10+0.5), Math.floor(Math.random()*10+0.5)];
+           
+            const dat = [{
+                x:xAr,
+                y:yAr,
+                type:"bar",
+                orientation:"v",
+                marker: {color:" rgb(203, 189, 220)", margin: "2px solid black"}
+            }];
+            
+            const tress = {title:"Mi progreso tercer parcial"};
+            Plotly.newPlot("tres", dat, tress);
+            //el espacio en el que se va a generar (myPlot), los datos
+        </script>
+    </center>
+</body>
+
+
+</html>
+
